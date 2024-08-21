@@ -3,7 +3,7 @@ package app.netlify.dev4rju9.runningtracker.di
 import android.content.Context
 import androidx.room.Room
 import app.netlify.dev4rju9.runningtracker.db.RunningDatabase
-import app.netlify.dev4rju9.runningtracker.other.Constants
+import app.netlify.dev4rju9.runningtracker.other.Constants.RUNNING_DATABASE_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,7 +22,7 @@ object AppModule {
     ) = Room.databaseBuilder(
         app,
         RunningDatabase::class.java,
-        Constants.RUNNING_DATABASE_NAME
+        RUNNING_DATABASE_NAME
     ).build()
 
     @Singleton

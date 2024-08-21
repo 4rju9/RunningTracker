@@ -1,8 +1,8 @@
-package app.netlify.dev4rju9.runningtracker
+package app.netlify.dev4rju9.runningtracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import app.netlify.dev4rju9.runningtracker.R
 import app.netlify.dev4rju9.runningtracker.db.RunDAO
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

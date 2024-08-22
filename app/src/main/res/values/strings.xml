@@ -10,6 +10,5 @@
     <string
         name="google_maps_key"
         templateMergeStrategy="preserve"
-        translatable="false">ENTER YOUR API KEY HERE
-    </string>
+        translatable="false">REDACTED_KEY</string>
 </resources>

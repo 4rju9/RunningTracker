@@ -1,5 +1,6 @@
 package app.netlify.dev4rju9.runningtracker.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import app.netlify.dev4rju9.runningtracker.R
 import app.netlify.dev4rju9.runningtracker.databinding.ActivityMainBinding
+import app.netlify.dev4rju9.runningtracker.other.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -22,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
+        navigateToTrackingFragmentIfNeeded(intent)
+
         binding.bottomNavigationView.setupWithNavController(binding.flFragment.getChildAt(0).findNavController())
 
         binding.flFragment.getChildAt(0).findNavController()
@@ -34,4 +38,16 @@ class MainActivity : AppCompatActivity() {
             }
 
     }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        navigateToTrackingFragmentIfNeeded(intent)
+    }
+
+    private fun navigateToTrackingFragmentIfNeeded (intent: Intent?) {
+        if (intent?.action == ACTION_SHOW_TRACKING_FRAGMENT)
+            binding.flFragment.getChildAt(0).findNavController()
+                .navigate(R.id.action_global_trackingFragment)
+    }
+
 }

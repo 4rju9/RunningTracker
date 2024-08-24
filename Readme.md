@@ -13,7 +13,6 @@ Bullet Points:
    * Leveraged Room database with Kotlin coroutines to efficiently store and manage runs.
    * Utilized SharedPreferences to store user data.
    * Integrated the MPAndroidChart library to visually display runs.
-[Download](https://drive.google.com/file/d/1ntHF4GeEmUNMN_muKPOqSZUE8ttdalm6/view?)
 <!-- ## Usage
 <b>Disclaimer :</b>
 * This app is not published on Playstore, you have to download this from

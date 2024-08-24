@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/4rju9/RunningTracker"><img src="https://github.com/4rju9/NewsApp/assets/63835760/7517e74a-1347-4f57-a367-c2094e45e6c5" alt="RunningTracker"</a>
+   <a href="https://github.com/4rju9/RunningTracker"><img src="https://github.com/user-attachments/assets/df237996-3ec8-4ae8-80e2-cf83ac8d3b23" alt="RunningTracker"</a>
    <br>
    <br>
 </p>

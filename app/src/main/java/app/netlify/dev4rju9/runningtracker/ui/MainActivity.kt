@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         navigateToTrackingFragmentIfNeeded(intent)
 
         binding.bottomNavigationView.setupWithNavController(binding.flFragment.getChildAt(0).findNavController())
+        binding.bottomNavigationView.setOnNavigationItemReselectedListener { /* NO-OP */}
 
         binding.flFragment.getChildAt(0).findNavController()
             .addOnDestinationChangedListener { _, destination, _ ->

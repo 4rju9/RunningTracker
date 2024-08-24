@@ -8,16 +8,12 @@
 
 ## Implementation
 Bullet Points:
-   * Developed a Running Tracker mobile application using the MVVM skeleton architecture.
-   * Implemented Navigation Components for seamless navigation within fragments.
-   * Leveraged Room database with Kotlin coroutines to efficiently store and manage fetched news data.
-   * Incorporated web view functionality to provide users with an immersive reading experience.
+   * Developed a Running Tracker mobile application utilizing the MVVM skeleton architecture.
+   * Implemented Navigation Components to ensure smooth navigation within fragments.
+   * Leveraged Room database with Kotlin coroutines to efficiently store and manage runs.
+   * Utilized SharedPreferences to store user data.
+   * Integrated the MPAndroidChart library to visually display runs.
 [Download](https://drive.google.com/file/d/1ntHF4GeEmUNMN_muKPOqSZUE8ttdalm6/view?)
- - Developed a Running Tracker mobile application utilizing the MVVM skeleton architecture
-- Implemented Navigation Components to ensure smooth navigation within fragments
-- Leveraged Room database with Kotlin coroutines to efficiently store and manage fetched news data
-- Utilized SharedPreferences to store user data
-- Integrated the MPAndroidChart library to visually display runs.
 <!-- ## Usage
 <b>Disclaimer :</b>
 * This app is not published on Playstore, you have to download this from

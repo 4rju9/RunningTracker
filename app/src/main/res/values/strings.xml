@@ -10,5 +10,5 @@
     <string
         name="google_maps_key"
         templateMergeStrategy="preserve"
-        translatable="false"></string>
+        translatable="false">Remove Api Key Enter Your Own Api Key</string>
 </resources>

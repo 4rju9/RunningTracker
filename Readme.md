@@ -4,7 +4,7 @@
    <br>
 </p>
 <h1>Running Tracker</h1>
-<b>a mobile app built with MVVM architecture, Navigation Components for navigation, Room database for data storage, and web view for immersive reading. </b>
+<b>a mobile app built with MVVM architecture, Navigation Components for navigation, Room database for data storage, and MPAndroidChart library to visually display runs. </b>
 
 ## Implementation
 Bullet Points:

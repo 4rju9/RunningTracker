@@ -4,7 +4,7 @@
    <br>
 </p>
 <h1>Running Tracker</h1>
-<b>News mobile app built with MVVM architecture, Retrofit for API integration, Navigation Components for navigation, Room database for data storage, and web view for immersive reading. </b>
+<b>Running Tracking mobile app built with MVVM architecture, Navigation Components for navigation, Room database for data storage, and web view for immersive reading. </b>
 
 ## Implementation
 Bullet Points:
@@ -12,6 +12,7 @@ Bullet Points:
    * Implemented Navigation Components for seamless navigation within fragments.
    * Leveraged Room database with Kotlin coroutines to efficiently store and manage fetched news data.
    * Incorporated web view functionality to provide users with an immersive reading experience.
+[Download](https://drive.google.com/file/d/1ntHF4GeEmUNMN_muKPOqSZUE8ttdalm6/view?)
 <!-- ## Usage
 <b>Disclaimer :</b>
 * This app is not published on Playstore, you have to download this from

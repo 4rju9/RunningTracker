@@ -13,6 +13,7 @@ import app.netlify.dev4rju9.runningtracker.other.Constants.ACTION_START_OR_RESUM
 import app.netlify.dev4rju9.runningtracker.other.Constants.MAP_ZOOM
 import app.netlify.dev4rju9.runningtracker.other.Constants.POLYLINE_COLOR
 import app.netlify.dev4rju9.runningtracker.other.Constants.POLYLINE_WIDTH
+import app.netlify.dev4rju9.runningtracker.other.TrackingUtility
 import app.netlify.dev4rju9.runningtracker.services.Polyline
 import app.netlify.dev4rju9.runningtracker.services.TrackingService
 import app.netlify.dev4rju9.runningtracker.ui.viewmodels.MainViewModel
@@ -29,6 +30,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
     private lateinit var binding: FragmentTrackingBinding
     private var isTracking = false
     private var pathPoints = mutableListOf<Polyline>()
+    private var currentTimeInMillis = 0L
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -58,6 +60,12 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
             pathPoints = it
             addLatestPolyline()
             addCameraToUser()
+        })
+
+        TrackingService.timeRunInMillis.observe(viewLifecycleOwner, Observer {
+            currentTimeInMillis = it
+            val formattedTime = TrackingUtility.getFormattedStopWatchTime(currentTimeInMillis, true)
+            binding.tvTimer.text = formattedTime
         })
     }
 
